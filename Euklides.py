@@ -1,5 +1,7 @@
 import numbers
-import sys
+import sys, time
+start_time=time.time()
+
 
 def Euklides(a,b):
     Q=[]
@@ -38,4 +40,4 @@ while(f):
     print("Invalid parameter!")
     f=True
 
-print("GCD({},{}) = {} = {}*{} + {}*{} ".format(a,b,result[0],result[1],a,result[2],b))
+print("GCD({},{}) = {} = {}*{} + {}*{} \n Time: {}".format(a,b,result[0],result[1],a,result[2],b,time.time()-start_time))
